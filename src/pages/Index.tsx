@@ -67,10 +67,10 @@ const Index = () => {
           transition={{ duration: 0.8 }}
         >
           <Heart className="h-16 w-16 text-destructive mx-auto mb-6 pulse-glow" />
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
+           <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 px-2">
             WHAT IF <span className="text-gradient-primary">YOUR LOVED ONE</span>
-            <br />NEEDED AN AMBULANCE
-            <br /><span className="text-destructive">RIGHT NOW?</span>
+            <br className="hidden sm:block" /><span className="sm:hidden"> </span>NEEDED AN AMBULANCE
+            <br className="hidden sm:block" /><span className="sm:hidden"> </span><span className="text-destructive">RIGHT NOW?</span>
           </h1>
         </motion.div>
 
@@ -158,7 +158,7 @@ const Index = () => {
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8">
             In emergency medicine, the "Golden Hour" refers to the period immediately after a traumatic injury during which prompt medical treatment can prevent death.
           </p>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="text-center p-4 rounded-xl border border-border bg-secondary/30">
               <Heart className="h-6 w-6 text-destructive mx-auto mb-2" />
               <p className="stat-value text-2xl font-bold">90%</p>

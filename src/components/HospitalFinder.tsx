@@ -109,7 +109,7 @@ const HospitalFinder = () => {
                   </div>
                   <span className="font-display text-xl font-bold">KAVACH</span>
                 </div>
-                <p className="text-xs text-muted-foreground mb-6">powered by AI-CER</p>
+                <p className="text-xs text-muted-foreground mb-6">powered by VAJRA</p>
 
                 <h3 className="font-display text-2xl font-bold mb-4 md:text-3xl">
                   WHAT IF YOU NEEDED AN<br />AMBULANCE RIGHT NOW?

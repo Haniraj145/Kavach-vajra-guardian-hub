@@ -28,7 +28,7 @@ const Navbar = () => {
           </div>
           <div>
             <span className="font-display text-lg font-bold text-foreground">KAVACH</span>
-            <span className="ml-1 text-xs text-muted-foreground">powered by AI-CER</span>
+            <span className="ml-1 text-xs text-muted-foreground">powered by VAJRA</span>
           </div>
         </Link>
 
