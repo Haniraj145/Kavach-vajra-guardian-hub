@@ -118,32 +118,32 @@ const CitySelector = () => {
                 <p className="text-xs text-muted-foreground mb-1 flex items-center gap-1">
                   <AlertTriangle className="h-3 w-3 text-destructive" /> Estimated Avg. Delay
                 </p>
-                <p className="stat-value text-3xl font-bold text-destructive">{selectedCity.avgDelay} min</p>
+                <p className="stat-value text-2xl md:text-3xl font-bold text-destructive">{selectedCity.avgDelay} min</p>
                 <p className="text-xs text-muted-foreground mt-1">Industry estimates · Varies by location</p>
               </div>
               <div className="rounded-xl border border-border bg-secondary/50 p-4">
                 <p className="text-xs text-muted-foreground mb-1 flex items-center gap-1">
                   <Car className="h-3 w-3" /> Traffic Congestion Index
                 </p>
-                <p className="stat-value text-3xl font-bold text-foreground">{selectedCity.congestionIndex}/100</p>
+                <p className="stat-value text-2xl md:text-3xl font-bold text-foreground">{selectedCity.congestionIndex}/100</p>
                 <p className="text-xs text-muted-foreground mt-1">Higher = More congested</p>
               </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 mb-6">
-              <div className="rounded-xl border border-border bg-secondary/30 p-4 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+              <div className="rounded-xl border border-border bg-secondary/30 p-3 md:p-4 text-center overflow-hidden">
                 <p className="text-xs text-muted-foreground mb-1">Est. Annual Deaths</p>
-                <p className="stat-value text-xl font-bold">{selectedCity.annualDeaths.toLocaleString()}</p>
+                <p className="stat-value text-lg md:text-xl font-bold break-words">{selectedCity.annualDeaths.toLocaleString()}</p>
                 <p className="text-xs text-muted-foreground">Modelled estimate</p>
               </div>
-              <div className="rounded-xl border border-border bg-secondary/30 p-4 text-center">
+              <div className="rounded-xl border border-border bg-secondary/30 p-3 md:p-4 text-center overflow-hidden">
                 <p className="text-xs text-muted-foreground mb-1">Est. Economic Loss/Year</p>
-                <p className="stat-value text-xl font-bold text-accent">{selectedCity.economicLoss}</p>
+                <p className="stat-value text-lg md:text-xl font-bold text-accent break-words">{selectedCity.economicLoss}</p>
                 <p className="text-xs text-muted-foreground">Modelled estimate</p>
               </div>
-              <div className="rounded-xl border border-border bg-secondary/30 p-4 text-center">
+              <div className="rounded-xl border border-border bg-secondary/30 p-3 md:p-4 text-center overflow-hidden">
                 <p className="text-xs text-muted-foreground mb-1">Population</p>
-                <p className="stat-value text-xl font-bold">{selectedCity.population}</p>
+                <p className="stat-value text-lg md:text-xl font-bold break-words">{selectedCity.population}</p>
               </div>
             </div>
 
@@ -155,18 +155,18 @@ const CitySelector = () => {
               <p className="text-xs text-accent mb-4 flex items-center gap-1">
                 <AlertTriangle className="h-3 w-3" /> All figures below are projections based on simulation modelling. Actual results will vary.
               </p>
-              <div className="grid grid-cols-3 gap-4">
-                <div className="text-center">
-                  <p className="stat-value text-2xl font-bold text-primary">{selectedCity.projectedDelay} min</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="text-center overflow-hidden">
+                  <p className="stat-value text-xl md:text-2xl font-bold text-primary">{selectedCity.projectedDelay} min</p>
                   <p className="text-xs text-muted-foreground">Projected New Avg. Delay</p>
                   <p className="text-xs text-primary font-semibold">{selectedCity.projectedFasterPercent}% projected faster</p>
                 </div>
-                <div className="text-center">
-                  <p className="stat-value text-2xl font-bold text-foreground">{selectedCity.projectedLivesSaved.toLocaleString()}</p>
+                <div className="text-center overflow-hidden">
+                  <p className="stat-value text-xl md:text-2xl font-bold text-foreground break-words">{selectedCity.projectedLivesSaved.toLocaleString()}</p>
                   <p className="text-xs text-muted-foreground">Projected Lives Saved/Year</p>
                 </div>
-                <div className="text-center">
-                  <p className="stat-value text-2xl font-bold text-primary">{selectedCity.projectedCostSavings}</p>
+                <div className="text-center overflow-hidden">
+                  <p className="stat-value text-xl md:text-2xl font-bold text-primary break-words">{selectedCity.projectedCostSavings}</p>
                   <p className="text-xs text-muted-foreground">Projected Cost Savings/Year</p>
                 </div>
               </div>

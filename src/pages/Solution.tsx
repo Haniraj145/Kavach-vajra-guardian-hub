@@ -7,9 +7,9 @@ const Solution = () => (
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
         <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">Introducing</p>
         <h1 className="font-display text-4xl font-bold md:text-5xl mb-2">KAVACH</h1>
-        <p className="text-muted-foreground">powered by AI-CER Technology</p>
+        <p className="text-muted-foreground">powered by VAJRA Technology</p>
         <p className="text-muted-foreground max-w-xl mx-auto mt-4">
-          AI Mission Control Remote System uses artificial intelligence to create green corridors in real-time, helping emergency vehicles reach patients faster.
+          VAJRA uses artificial intelligence to create green corridors in real-time, helping emergency vehicles reach patients faster.
         </p>
       </motion.div>
 

@@ -55,7 +55,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-        © 2026 KAVACH. Made in India, for the world. Patent Filed.
+        © 2026 KAVACH-VAJRA. Made in India, for the world. Patent Filed.
       </div>
     </div>
   </footer>
