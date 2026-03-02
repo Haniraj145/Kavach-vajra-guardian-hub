@@ -81,7 +81,7 @@ const HospitalFinder = () => {
 
   const getStaticMapUrl = () => {
     if (!userLocation || !selectedHospital) return "";
-    return `https://maps.google.com/maps?q=${selectedHospital.lat},${selectedHospital.lng}&z=14&output=embed`;
+    return `https://www.google.com/maps?saddr=${userLocation.lat},${userLocation.lng}&daddr=${selectedHospital.lat},${selectedHospital.lng}&output=embed`;
   };
 
   return (
